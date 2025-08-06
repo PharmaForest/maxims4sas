@@ -4,19 +4,39 @@ This package displays maxims that have deeply impressed me and that I wish to pa
 ![maxims4sas](./maxims4sas_small.png)  
 
 # %sas_maxims;
- Description     : Displays a collection of "Maxims of Maximally Efficient SAS Programmers" using PROC ODSTEXT with bold styling for emphasis.  
- Author          : Originally compiled by Kurt Bremser (2019)  
-                   https://support.sas.com/resources/papers/proceedings19/3062-2019.pdf  
-                   And the collective knowledge created by the SAS user community.  
-                   https://communities.sas.com/t5/SAS-Communities-Library/Maxims-of-Maximally-Efficient-SAS-Programmers/ta-p/352068  
- Ported by       : Morioka Yutaka  
+## Description:
+This macro presents 50+ practical and philosophical principles aimed at  
+improving SAS programming habits. It can be used in training materials,  
+documentation, or as motivational content.  
+ 
+Call to the macro displays a collection of   
+"*Maxims of Maximally Efficient SAS Programmers*"  
+using `PROC ODSTEXT` with bold styling for emphasis.  
+  
+### Author:  
+Originally compiled by **Kurt Bremser** (2019)  
+[Maxims of Maximally Efficient SAS Programmers](https://support.sas.com/resources/papers/proceedings19/3062-2019.pdf)  
 
- Usage Example   :   
- ~~~text
-     %sas_maxims;
- ~~~
+Ported by: Morioka Yutaka  
+Major updates and improvements by: Bartosz Jablonski  
 
-<img width="723" height="378" alt="Image" src="https://github.com/user-attachments/assets/26a2dde5-450a-40b8-ac81-d6e68b2d515d" />
+### Parameters: 
+- `maxims` - *OPTIONAL*, list of numbers of maxims to be printed. 
+              When empty *all* are printed. See examples.
+
+## Examples:
+
+**Example 1. Print all maxims.**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas 
+%sas_maxims()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+**Example 2. Print maxims 1 to 6 and maxims 42 and 52.**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas 
+%sas_maxims(1:6, 42, 52)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 # version history<br>
 0.1.0(06August2025): Initial version<br>
