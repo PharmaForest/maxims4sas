@@ -10,12 +10,12 @@
   
 - Package: maxims4sas
 - Version: 0.2.0
-- Generated: 2025-08-07T01:10:57
+- Generated: 2025-08-07T01:49:08
 - Author(s): Yutaka Morioka(sasyupi@gmail.com)
 - Maintainer(s): Yutaka Morioka(sasyupi@gmail.com)
 - License: MIT
-- File SHA256: `F*C194C3E0CAA9A326779B54666E27FBD1F8409F13E8F419F82BDDE0E9906E268B` for this version
-- Content SHA256: `C*D20FCCD6504EDC4F3488B5EAFCE318E90FF3691D065D62E386BE05EFA274A7F1` for this version
+- File SHA256: `F*1298E19A924A9ECD0CF76B1D6F06DCE0FD95941764D602C069184961B6F0CD99` for this version
+- Content SHA256: `C*185FDC2F70A9445DE86EBA7DA6949BB321587F6C0C3256A98EF47AC633784E85` for this version
   
 ---
  
@@ -72,7 +72,7 @@ Originally compiled by **Kurt Bremser** (2019)
 [Maxims of Maximally Efficient SAS Programmers](https://support.sas.com/resources/papers/proceedings19/3062-2019.pdf)
 
 Ported by: Morioka Yutaka
-Major updates and improvements by: **Bartosz Jabłoński **
+Major updates and improvements by: Bartosz Jablonski
 
 ### Parameters: 
 
