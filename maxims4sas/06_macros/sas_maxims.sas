@@ -1,5 +1,6 @@
 /*** HELP START ***//*
 
+
 Macro Name      : `sas_maxims`
 
 ## Description:
@@ -18,6 +19,7 @@ Originally compiled by **Kurt Bremser** (2019)
 [Maxims of Maximally Efficient SAS Programmers](https://support.sas.com/resources/papers/proceedings19/3062-2019.pdf)
 
 Ported by: Morioka Yutaka
+
 Major updates and improvements by: Bartosz Jablonski
 
 ### Parameters: 
@@ -51,6 +53,7 @@ Requires ODS destination that supports ODSTEXT (e.g., ODS PDF, ODS RTF, etc.)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ---
+
 
 *//*** HELP END ***/
 
