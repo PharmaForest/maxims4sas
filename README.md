@@ -38,9 +38,11 @@ Major updates and improvements by: Bartosz Jablonski
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas 
 %sas_maxims(1:6, 42, 52)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
+<img width="576" height="401" alt="Image" src="https://github.com/user-attachments/assets/296b4489-d4c3-41cd-a3fe-d2d66859323d" />
+<br>
+<br>
 # version history<br>
+0.2.0(07August2025): By adding parameters, it is now possible to select proverbs. The visual beauty of the displayed text has also been greatly improved. Thank you, Bart.<br>
 0.1.0(06August2025): Initial version<br>
 
 ## What is SAS Packages?  
