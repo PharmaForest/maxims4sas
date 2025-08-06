@@ -9,17 +9,17 @@
 ### Version information:
   
 - Package: maxims4sas
-- Version: 0.1.0
-- Generated: 2025-08-06T08:51:33
+- Version: 0.2.0
+- Generated: 2025-08-07T01:10:57
 - Author(s): Yutaka Morioka(sasyupi@gmail.com)
 - Maintainer(s): Yutaka Morioka(sasyupi@gmail.com)
 - License: MIT
-- File SHA256: `F*51773D8FCEF63F9DC11352381E98CDF845A10286E8F9061E9B1EB6D78154C7DF` for this version
-- Content SHA256: `C*514A572742F40FC368AA5183172E85D45D45E7988EB9BF29B7FBDAAE97FC1209` for this version
+- File SHA256: `F*C194C3E0CAA9A326779B54666E27FBD1F8409F13E8F419F82BDDE0E9906E268B` for this version
+- Content SHA256: `C*D20FCCD6504EDC4F3488B5EAFCE318E90FF3691D065D62E386BE05EFA274A7F1` for this version
   
 ---
  
-# The `maxims4sas` package, version: `0.1.0`;
+# The `maxims4sas` package, version: `0.2.0`;
   
 ---
  
@@ -54,27 +54,57 @@ The `maxims4sas` package consists of the following content:
  
 ## `%sas_maxims()` macro <a name="sasmaxims-macros-1"></a> ######
 
-Macro Name      : sas_maxims
- Description     : Displays a collection of "Maxims of Maximally Efficient SAS Programmers"
-                   using PROC ODSTEXT with bold styling for emphasis.
+Macro Name      : `sas_maxims`
 
- Author          : Originally compiled by Kurt Bremser (2019)
-                   https://support.sas.com/resources/papers/proceedings19/3062-2019.pdf
- Ported by       : Morioka Yutaka
+## Description:
 
- Parameters      : None
+This macro presents 50+ practical and philosophical principles aimed at
+improving SAS programming habits. It can be used in training materials,
+documentation, or as motivational content.
+ 
+Call to the macro displays a collection of 
+"*Maxims of Maximally Efficient SAS Programmers*"
+using `PROC ODSTEXT` with bold styling for emphasis.
 
- Output          : Stylized text output using ODSTEXT, intended for inclusion in reports
-                   (PDF, RTF, or HTML via ODS).
+### Author: 
 
- Dependencies    : Requires ODS destination that supports ODSTEXT (e.g., ODS PDF, ODS RTF, etc.)
+Originally compiled by **Kurt Bremser** (2019)
+[Maxims of Maximally Efficient SAS Programmers](https://support.sas.com/resources/papers/proceedings19/3062-2019.pdf)
 
- Usage Example   : 
-     %sas_maxims;
+Ported by: Morioka Yutaka
+Major updates and improvements by: **Bartosz Jabłoński **
 
- Notes           : This macro presents 50+ practical and philosophical principles aimed at
-                   improving SAS programming habits. It can be used in training materials,
-                   documentation, or as motivational content.
+### Parameters: 
+
+- `maxims` - *OPTIONAL*, list of numbers of maxims to be printed. 
+              When empty *all* are printed. See examples.
+
+### Output: 
+
+Stylized text output using `ODSTEXT`, 
+intended for inclusion in reports
+(PDF, RTF, or HTML via ODS).
+
+### Dependencies: 
+
+Requires ODS destination that supports ODSTEXT (e.g., ODS PDF, ODS RTF, etc.)
+
+---
+
+## Examples:
+
+**Example 1. Print all maxims.**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas 
+%sas_maxims()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+**Example 2. Print maxims 1 to 6 and maxims 42 and 52.**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas 
+%sas_maxims(1:6, 42, 52)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+---
 
   
 ---
