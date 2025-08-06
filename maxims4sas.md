@@ -9,17 +9,17 @@
 ### Version information:
   
 - Package: maxims4sas
-- Version: 0.2.0
-- Generated: 2025-08-07T01:49:08
+- Version: 0.2.1
+- Generated: 2025-08-07T06:12:28
 - Author(s): Yutaka Morioka(sasyupi@gmail.com)
 - Maintainer(s): Yutaka Morioka(sasyupi@gmail.com)
 - License: MIT
-- File SHA256: `F*1298E19A924A9ECD0CF76B1D6F06DCE0FD95941764D602C069184961B6F0CD99` for this version
-- Content SHA256: `C*185FDC2F70A9445DE86EBA7DA6949BB321587F6C0C3256A98EF47AC633784E85` for this version
+- File SHA256: `F*147581409AB07C5F03D52BD3B058E9E9EBDAF17BAF661255062D20E35B12EE48` for this version
+- Content SHA256: `C*0E339EF99D3A4EC0B8BA84C67321DBA07C637F9BD363E04730852F3D9E93A79E` for this version
   
 ---
  
-# The `maxims4sas` package, version: `0.2.0`;
+# The `maxims4sas` package, version: `0.2.1`;
   
 ---
  
@@ -54,6 +54,7 @@ The `maxims4sas` package consists of the following content:
  
 ## `%sas_maxims()` macro <a name="sasmaxims-macros-1"></a> ######
 
+
 Macro Name      : `sas_maxims`
 
 ## Description:
@@ -72,6 +73,7 @@ Originally compiled by **Kurt Bremser** (2019)
 [Maxims of Maximally Efficient SAS Programmers](https://support.sas.com/resources/papers/proceedings19/3062-2019.pdf)
 
 Ported by: Morioka Yutaka
+
 Major updates and improvements by: Bartosz Jablonski
 
 ### Parameters: 
@@ -105,6 +107,7 @@ Requires ODS destination that supports ODSTEXT (e.g., ODS PDF, ODS RTF, etc.)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ---
+
 
   
 ---
