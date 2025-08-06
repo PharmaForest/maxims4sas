@@ -31,8 +31,8 @@ Major updates and improvements by: Bartosz Jablonski
 %sas_maxims()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <img width="711" height="374" alt="Image" src="https://github.com/user-attachments/assets/b6e9ed37-a148-4043-bb43-813a79f5009b" />
-  
-  
+<br>
+<br>
 
 **Example 2. Print maxims 1 to 6 and maxims 42 and 52.**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas 
