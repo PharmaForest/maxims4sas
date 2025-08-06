@@ -42,7 +42,8 @@ Major updates and improvements by: Bartosz Jablonski
 <br>
 <br>
 # version history<br>
-0.2.0(07August2025): By adding parameters, it is now possible to select proverbs. The visual beauty of the displayed text has also been greatly improved. Thank you, Bart.<br>
+0.2.0(07August2025):   
+  By adding parameters, it is now possible to select proverbs. The visual beauty of the displayed text has also been greatly improved. Thank you, Bart.<br>
 0.1.0(06August2025): Initial version<br>
 
 ## What is SAS Packages?  
