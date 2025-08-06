@@ -16,4 +16,4 @@ This package displays maxims that have deeply impressed me and that I wish to pa
      %sas_maxims;
  ~~~
 
-
+<img width="723" height="378" alt="Image" src="https://github.com/user-attachments/assets/26a2dde5-450a-40b8-ac81-d6e68b2d515d" />
