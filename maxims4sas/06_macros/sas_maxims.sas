@@ -496,6 +496,5 @@ quit;
 
 %mend sas_maxims;
 
-%sas_maxims()
 
 /* Maxims of Maximally Efficient SAS Programmers */
