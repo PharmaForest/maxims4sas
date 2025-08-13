@@ -1,75 +1,119 @@
 # maxims4sas
-This package displays maxims that have deeply impressed me and that I wish to pass on to future generations.  
-  
-![maxims4sas](./maxims4sas_small.png)  
 
-# %sas_maxims;
+![maxims4sas](./maxims4sas_small.png)
+
+## Maxims of Maximally Efficient SAS Programmers ##
+
+Presenting 52 programming advises and best practices
+originally created and compiled by **Kurt Bremser** 
+under `communities.sas.com` article:
+["Maxims of Maximally Efficient SAS Programmers"](https://communities.sas.com/t5/SAS-Communities-Library/Maxims-of-Maximally-Efficient-SAS-Programmers/ta-p/352068) 
+started and maintained since 2017-04-24.
+
+Published as a **SAS Global Forum 2019** article: 
+[Maxims of Maximally Efficient SAS Programmers](https://support.sas.com/resources/papers/proceedings19/3062-2019.pdf)
+
+This package displays maxims that have deeply impressed us 
+and that we wish to promoter them to future generations.
+
+---
+
 ## Description:
-This macro presents 50+ practical and philosophical principles aimed at  
-improving SAS programming habits. It can be used in training materials,  
-documentation, or as motivational content.  
- 
-Call to the macro displays a collection of   
-"*Maxims of Maximally Efficient SAS Programmers*"  
-using `PROC ODSTEXT` with bold styling for emphasis.  
-  
-### Author:  
-Originally compiled by **Kurt Bremser** (2019)  
-[Maxims of Maximally Efficient SAS Programmers](https://support.sas.com/resources/papers/proceedings19/3062-2019.pdf)  
 
-Ported by: Morioka Yutaka  
-Major updates and improvements by: Bartosz Jablonski  
+The `%sas_maxims()` macro is provided.
+It presents 50+ practical and philosophical principles aimed at
+improving SAS programming habits. It can be used in training materials,
+documentation, or as motivational content.
 
-### Parameters: 
-- `maxims` - *OPTIONAL*, list of numbers of maxims to be printed. 
-              When empty *all* are printed. See examples.
+[The `%sas_maxims()` macro documentation](./maxims4sas.md)
 
 ## Examples:
 
 **Example 1. Print all maxims.**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas
 %sas_maxims()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 <img width="711" height="374" alt="Image" src="https://github.com/user-attachments/assets/b6e9ed37-a148-4043-bb43-813a79f5009b" />
 <br>
-<br>
+
+
 
 **Example 2. Print maxims 1 to 6 and maxims 42 and 52.**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas
 %sas_maxims(1:6, 42, 52)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <img width="576" height="401" alt="Image" src="https://github.com/user-attachments/assets/296b4489-d4c3-41cd-a3fe-d2d66859323d" />
-<br>
-<br>
-# version history<br>
-0.2.0(07August2025): Possible to select Maxims. The visual beauty of the displayed text has also been greatly improved. Thank you, Bart.<br>
-0.1.0(06August2025): Initial version<br>
 
-## What is SAS Packages?  
-The package is built on top of **SAS Packages framework(SPF)** developed by Bartosz Jablonski.<br>
-For more information about SAS Packages framework, see [SAS_PACKAGES](https://github.com/yabwon/SAS_PACKAGES).  
-You can also find more SAS Packages(SASPACs) in [SASPAC](https://github.com/SASPAC).
+---
+
+## Notes on versions history
+
+- 0.2.2(13August2025): Documentation polished.
+- 0.2.0(07August2025): Possible to select Maxims. The visual beauty of the displayed text has also been greatly improved.
+- 0.1.0(06August2025): Initial version.
+
+---
+
+## What is SAS Packages?
+
+The package is built on top of **SAS Packages Framework(SPF)** developed by Bartosz Jablonski.
+
+For more information about the framework, see [SAS Packages Framework](https://github.com/yabwon/SAS_PACKAGES).
+
+You can also find more SAS Packages (SASPacs) in the [SAS Packages Archive(SASPAC)](https://github.com/SASPAC).
 
 ## How to use SAS Packages? (quick start)
-### 1. Set-up SPF(SAS Packages Framework)
-Firstly, create directory for your packages and assign a fileref to it.
-~~~sas      
+
+### 1. Set-up SAS Packages Framework
+
+First, create a directory for your packages and assign a `packages` fileref to it.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas
 filename packages "\path\to\your\packages";
-~~~
-Secondly, enable the SAS Packages Framework.  
-(If you don't have SAS Packages Framework installed, follow the instruction in [SPF documentation](https://github.com/yabwon/SAS_PACKAGES/tree/main/SPF/Documentation) to install SAS Packages Framework.)  
-~~~sas      
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Secondly, enable the SAS Packages Framework.
+(If you don't have SAS Packages Framework installed, follow the instruction in 
+[SPF documentation](https://github.com/yabwon/SAS_PACKAGES/tree/main/SPF/Documentation) 
+to install SAS Packages Framework.)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas
 %include packages(SPFinit.sas)
-~~~  
-### 2. Install SAS package  
-Install SAS package you want to use using %installPackage() in SPFinit.sas.
-~~~sas      
-%installPackage(packagename, sourcePath=\github\path\for\packagename)
-~~~
-(e.g. %installPackage(ABC, sourcePath=https://github.com/XXXXX/ABC/raw/main/))  
-### 3. Load SAS package  
-Load SAS package you want to use using %loadPackage() in SPFinit.sas.
-~~~sas      
-%loadPackage(packagename)
-~~~
-### Enjoy😁
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+### 2. Install SAS package
+
+Install SAS package you want to use with the SPF's `%installPackage()` macro.
+
+- For packages located in **SAS Packages Archive(SASPAC)** run:
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas
+  %installPackage(packageName)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- For packages located in **PharmaForest** run:
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas
+  %installPackage(packageName, mirror=PharmaForest)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- For packages located at some network location run:
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas
+  %installPackage(packageName, sourcePath=https://some/internet/location/for/packages)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  (e.g. `%installPackage(ABC, sourcePath=https://github.com/SomeRepo/ABC/raw/main/)`)
+
+
+### 3. Load SAS package
+
+Load SAS package you want to use with the SPF's `%loadPackage()` macro.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sas
+%loadPackage(packageName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+### Enjoy!
+
+---
