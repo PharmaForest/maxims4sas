@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_maxim_selector_all",
+  "source_file": "maxims4sas/01_macros/sas_maxims.sas",
+  "source_blob_sha": "f8dd158ec438961fc5a966ff18dbdfae633dadbb",
+  "source_commit": "39b79280e465f992182795adabd1481779ea61cc",
+  "notes": "Same source data _null_ step as t001_maxim_selector, exercising the 'print every maxim' default-call branch instead: an empty selector normalizes (per the macro's own logic) to the literal '0', which takes the repo's own ELSE branch and sets ALL=1. Covers the branch t001 does not. DOSUBL is not implemented in Jenner (accepted engine gap); &syspbuff. is supplied directly with the value the macro's own preprocessing would produce for a no-argument call. The selection data step itself is unmodified from the repo."
+}

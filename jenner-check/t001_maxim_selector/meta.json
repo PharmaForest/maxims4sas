@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_maxim_selector",
+  "source_file": "maxims4sas/01_macros/sas_maxims.sas",
+  "source_blob_sha": "f8dd158ec438961fc5a966ff18dbdfae633dadbb",
+  "source_commit": "39b79280e465f992182795adabd1481779ea61cc",
+  "notes": "Extracts the data _null_ step (lines ~69-83) that %sas_maxims's %sysfunc(dosubl(...)) call normally runs to parse a maxim-number selector (e.g. '1:6, 42, 52') into the list of maxims to print. DOSUBL is not implemented in Jenner (accepted engine gap), so this bundle supplies &syspbuff. directly with the pre-resolved value the macro's own preprocessing would produce, and runs the repo's selection data step unmodified. Exercises the ranged-selector branch (maxims != all). A small PROC PRINT presentation step (not present in the repo) is appended so the selection result is visible in the listing, not just the log."
+}

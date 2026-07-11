@@ -1,0 +1,7 @@
+                                          maxims4sas selector logic on Jenner                                           
+
+
+Requested selector  Maxims selected (from the repo's own data step)
+------------------  -----------------------------------------------
+1,2,3,4,5,6,42,52   1 2 3 4 5 6 42 52
+

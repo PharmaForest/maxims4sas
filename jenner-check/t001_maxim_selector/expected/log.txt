@@ -1,0 +1,21 @@
+NOTE: Option OBS changed to 100.
+NOTE: Option PS changed to MIN.
+NOTE: DATA _null_
+
+
+NOTE: Wrote _null_ (0 rows, 0 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: selected maxims = 1 2 3 4 5 6 42 52
+NOTE: DATA selected_maxims
+
+
+NOTE: Wrote selected_maxims (1 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to maxims4sas selector logic on Jenner.
+NOTE: PROC PRINT data=selected_maxims
+
+NOTE: PROC PRINT completed: 1 observations printed, 2 variables
