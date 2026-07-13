@@ -50,6 +50,7 @@ documentation, or as motivational content.
 
 ## Notes on versions history
 
+- 0.2.3(13July2026): Phrasing in some maxims polished.
 - 0.2.2(13August2025): Documentation polished.
 - 0.2.0(07August2025): Possible to select Maxims. The visual beauty of the displayed text has also been greatly improved.
 - 0.1.0(06August2025): Initial version.

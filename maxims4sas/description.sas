@@ -1,7 +1,7 @@
 Type : Package
 Package : maxims4sas
 Title : Maxims of Maximally Efficient SAS Programmers
-Version : 0.2.2
+Version : 0.2.3
 Author : Kurt Bremser (@Kurt_Bremser on communities.sas.com), Yutaka Morioka(sasyupi@gmail.com)
 Maintainer : Yutaka Morioka(sasyupi@gmail.com), Bartosz Jablonski
 License : MIT
