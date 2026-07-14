@@ -243,7 +243,7 @@ p 'Creating a format from a dataset lets you do a "join" on another dataset in o
 p "";
 h3 "Maxim 22: Force Correct Data." ;
 p "When reading from external sources, do not rely on PROC IMPORT. Instead use a data step that will fail with an error if an unexpected event in the input data happens. This lets you detect errors early in your analytic chain. ";
-h3 "Maxim 22 specifically precludes using the Excel file format for data interchange, because of the many involved automatisms.";
+p "Maxim 22 specifically precludes using the Excel file format for data interchange, because of the many involved automatisms.";
 %end;
 %let maxim=%eval(&maxim. +1);
 %if &maxim. in (&maxims.) or &ALL. %then %do;
@@ -425,7 +425,7 @@ p "Example:";
 p "if charvar in ('AAA','BBB','CCC');" / style=[font=("<Courier New>,Courier,sasmono") color=blue font_size=2];
 p "will work even if the defined length of charvar is > 3, but";
 p "if findw('AAA BBB CCC',charvar) > 0;"/ style=[font=("<Courier New>,Courier,sasmono") color=blue font_size=2];
-p "will fail if charvar has a length of 5 and will therefore contain 'AAA ', which cannot be found in the comparison string.Similarly, charvar = charvar !! 'some_other_string'; will invariably surprise the unwary novice.";
+p "will fail if charvar has a length of 5 and will therefore contain 'AAA ', which cannot be found in the comparison string. Similarly, charvar = charvar !! 'some_other_string'; will invariably surprise the unwary novice.";
 %end;
 %let maxim=%eval(&maxim. +1);
 %if &maxim. in (&maxims.) or &ALL. %then %do;
